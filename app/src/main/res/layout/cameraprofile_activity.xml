@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="196.77dp"
+            android:layout_height="82.53dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/frame"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_info"
+                android:layout_width="178.99dp"
+                android:layout_height="179dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:src="@drawable/userprofile" />
+            <TextView
+                android:fontFamily="@font/odor"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorHint"
+                android:textSize="22sp"
+                android:text="ជ្រើសរើសសកម្មភាព" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/lineColor" />
+            <LinearLayout
+                android:padding="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/camera"
+                    android:clickable="true"
+                    android:layout_marginRight="30dp"
+                    android:onClick="imageClick"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:src="@drawable/camera" />
+
+                <ImageView
+                    android:id="@+id/gallery"
+                    android:clickable="true"
+                    android:onClick="imageClick"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/gallery" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_next"
+        android:textColor="@color/textColorHint"
+        android:layout_width="110dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/buttonnext"
+        android:fontFamily="@font/odor"
+        android:textSize="20sp"
+        android:text="រំលង" />
+
+
+
+</LinearLayout>

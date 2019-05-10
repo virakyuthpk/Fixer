@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="196.77dp"
+            android:layout_height="82.53dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/frame"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:padding="30dp"
+            android:layout_width="320.16dp"
+            android:layout_height="362.96dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="179dp"
+                android:layout_height="177dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:src="@drawable/user"
+                app:civ_border_color="@color/frameColor"
+                app:civ_border_width="1dp" />
+
+
+            <TextView
+                android:fontFamily="@font/odor"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorHint"
+                android:textSize="22sp"
+                android:text="ផ្លាស់ប្តូររូបភាព"
+                android:selectAllOnFocus="false"
+                android:linksClickable="false"
+                android:autoLink="all"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_nn"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/textColorHint"
+            android:layout_width="110dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonnext"
+            android:fontFamily="@font/odor"
+            android:textSize="20sp"
+            android:text="រំលង" />
+        <Button
+            android:id="@+id/btn_n"
+            android:textColor="@color/textColorHint"
+            android:layout_width="110dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttoncorner"
+            android:fontFamily="@font/odor"
+            android:textSize="20sp"
+            android:text="ដាក់ស្នើរ" />
+    </LinearLayout>
+
+</LinearLayout>

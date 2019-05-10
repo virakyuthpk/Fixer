@@ -1,9 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:id="@+id/drawer_menu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapsActivity" />
+    tools:context=".MapsActivity">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MapsActivity" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_current"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@null"
+            android:src="@drawable/current"/>
+        <RelativeLayout
+            android:layout_width="230dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/buttonrequest"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_machanic"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/mechanic"
+                android:text="request" />
+            <TextView
+                android:id="@+id/txt_machanic"
+                android:textSize="25sp"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/img_machanic"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:text="ស្វែងរកជាង"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        app:headerLayout="@layout/nav_header"
+        android:id="@+id/nav_main"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </android.support.design.widget.NavigationView>
+
+
+
+</android.support.v4.widget.DrawerLayout>

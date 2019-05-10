@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Fixer</string>
     <string name="title_activity_maps">Fixer</string>
+    <string name="title_activity_maps2">Map</string>
+
+    <string name="Close">Closed</string>
+    <string name="Open">Opened</string>
+
+
+    <string name="radio_male">បុរស</string>
+    <string name="radio_female">ស្ត្រី</string>
 </resources>

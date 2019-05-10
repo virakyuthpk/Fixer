@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+       <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="196.77dp"
+            android:layout_height="82.53dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/logo" />
+           <LinearLayout
+               android:background="@drawable/frame"
+               android:layout_width="320.16dp"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:padding="10dp"
+               android:layout_gravity="center">
+
+               <LinearLayout
+                   android:padding="30dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+                   <TextView
+                       android:fontFamily="@font/odor"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/textColorHint"
+                       android:textSize="22sp"
+                       android:text="ទម្រង់ចុះឈ្មោះ"/>
+
+                   <EditText
+                       android:id="@+id/txtName"
+                       android:padding="10dp"
+                       android:backgroundTint="@color/lineColor"
+                       android:textColorHint="@color/textColorwhite"
+                       android:fontFamily="@font/odor"
+                       android:hint="ឈ្មោះ"
+                       android:textSize="20sp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+                   <EditText
+                       android:id="@+id/txtEmail"
+                       android:padding="10dp"
+                       android:backgroundTint="@color/lineColor"
+                       android:textColorHint="@color/textColorwhite"
+                       android:fontFamily="@font/odor"
+                       android:hint="លេខទូរស័ព្ទ"
+                       android:textSize="20sp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       />
+                   <RadioGroup
+                       android:id="@+id/radioSex"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" >
+                       <LinearLayout
+                           android:gravity="center"
+                           android:orientation="horizontal"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+
+                           <RadioButton
+                               android:fontFamily="@font/odor"
+                               android:buttonTint="@color/textColorHint"
+                               android:id="@+id/radioMale"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/radio_male"
+                               android:textColor="@color/textColorwhite"
+                               android:textSize="20sp"
+                               android:padding="10dp"
+                               android:checked="true" />
+
+                           <RadioButton
+                               android:fontFamily="@font/odor"
+                               android:buttonTint="@color/textColorHint"
+                               android:id="@+id/radioFemale"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/textColorwhite"
+                               android:textSize="20sp"
+                               android:padding="10dp"
+                               android:text="@string/radio_female" />
+
+                       </LinearLayout>
+
+                   </RadioGroup>
+                   <EditText
+                       android:fontFamily="@font/odor"
+                       android:padding="10dp"
+                       android:backgroundTint="@color/lineColor"
+                       android:textSize="20sp"
+                       android:textColorHint="@color/textColorwhite"
+                       android:id="@+id/editText1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="10"
+                       android:inputType="date"
+                       android:hint="ថ្ងៃខែ​ឆ្នាំ​កំណើត"/>
+                   <EditText
+                       android:padding="10dp"
+                       android:backgroundTint="@color/lineColor"
+                       android:textColorHint="@color/textColorwhite"
+                       android:id="@+id/txtpass"
+                       android:fontFamily="@font/odor"
+                       android:hint="ពាក្យសម្ងាត់"
+                       android:textSize="20sp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       />
+                   <EditText
+                       android:padding="10dp"
+                       android:backgroundTint="@color/lineColor"
+                       android:textColorHint="@color/textColorwhite"
+                       android:id="@+id/txtconpass"
+                       android:fontFamily="@font/odor"
+                       android:hint="បញ្ជាក់ពាក្យសម្ងាត់"
+                       android:textSize="20sp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       />
+                   <Button
+                       android:id="@+id/btn_login"
+                       android:textColor="@color/textColorHint"
+                       android:layout_width="110dp"
+                       android:layout_height="39dp"
+                       android:layout_gravity="center_horizontal"
+                       android:layout_marginTop="25dp"
+                       android:layout_marginBottom="24dp"
+                       android:background="@drawable/buttoncorner"
+                       android:fontFamily="@font/odor"
+                       android:textSize="20sp"
+                       android:text="ចូល" />
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</ScrollView>
